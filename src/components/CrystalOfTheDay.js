@@ -54,10 +54,11 @@ const CrystalOfTheDay = () => {
     return (
         <div className="crystal-of-the-day">
             <h2>Crystal of the Day</h2>
+            {/* Use process.env.PUBLIC_URL to dynamically use the base path */}
             <img src={`${process.env.PUBLIC_URL}${crystal.image}`} alt={crystal.name} />
             <h3>{crystal.name}</h3>
             <p>{crystal.description}</p>
-            
+    
             {/* Centered Chart */}
             <div style={{ display: 'flex', justifyContent: 'center', marginTop: '20px' }}>
                 <CrystalChart popularityData={popularityData} handleCrystalClick={handleCrystalClick} chartType="bar" />
