@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/mystic-guide/static/css/main.3693446d.css",
-    "main.js": "/mystic-guide/static/js/main.36b04e83.js",
+    "main.js": "/mystic-guide/static/js/main.a80a9057.js",
     "static/js/453.77e8a885.chunk.js": "/mystic-guide/static/js/453.77e8a885.chunk.js",
     "index.html": "/mystic-guide/index.html",
     "main.3693446d.css.map": "/mystic-guide/static/css/main.3693446d.css.map",
-    "main.36b04e83.js.map": "/mystic-guide/static/js/main.36b04e83.js.map",
+    "main.a80a9057.js.map": "/mystic-guide/static/js/main.a80a9057.js.map",
     "453.77e8a885.chunk.js.map": "/mystic-guide/static/js/453.77e8a885.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3693446d.css",
-    "static/js/main.36b04e83.js"
+    "static/js/main.a80a9057.js"
   ]
 }
