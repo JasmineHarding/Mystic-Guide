@@ -1,0 +1,331 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Main App Styles */
+.App {
+    text-align: center;
+    background-color: #ffe5ec; /* Soft strawberry pink background */
+    min-height: 100vh; /* Ensure the background covers the full height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Header Styles */
+.App-header {
+    background-color: #ffffff; /* White background for header */
+    padding: 20px;
+    color: #d63031; /* Bold strawberry red for text */
+    font-family: 'Poppins', sans-serif;
+    font-size: 3em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(243, 9, 9, 0.1);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(214, 48, 49, 0.4); /* Soft shadow for depth */
+}
+
+/* Content Styles */
+.App-content {
+    padding: 20px;
+}
+
+/* Navigation Styles */
+.Home, .PsychicAbilities, .BasicSpells, .FundamentalsComponents {
+    text-align: center;
+    padding: 30px;
+    background-color: #ffffff; /* White background for content sections */
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Navigation List Styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center; /* Center the items */
+}
+
+nav ul li {
+    margin: 15px 0; /* Add vertical space between items */
+}
+
+/* Custom Button Styles */
+.custom-button {
+    background-color: #ff7675; /* Strawberry pink button color */
+    color: #141414; /* Dark gray text */
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    width: 220px; /* Adjust button width */
+    text-transform: uppercase;
+    font-weight: 600;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.custom-button:hover {
+    background-color: #c0392b; /* Darker strawberry red for hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+/* Crystal of the Day Styles */
+.crystal-of-the-day {
+    border: 3px solid #ff7675; /* Strawberry pink border */
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #ffffff; /* White background */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    text-align: center;
+}
+
+.crystal-of-the-day h2 {
+    color: #d63031; /* Bold strawberry red */
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 3px rgba(214, 48, 49, 0.4); /* Soft shadow for depth */
+}
+
+.crystal-of-the-day img {
+    width: 150px; /* Adjust the size of the crystal image */
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.crystal-of-the-day p {
+    color: #2d3436; /* Dark gray for text */
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin: 10px 20px;
+}
+
+/* Basic Spells Styles */
+.BasicSpells {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f7f4e9; /* Soft ivory background */
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
+    color: #4a4a4a; /* Soft dark grey for text */
+}
+
+.BasicSpells h1 {
+    text-align: center;
+    color: #8fbf73; /* Deeper sage green for the main title */
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+.BasicSpells h2 {
+    color: #8fbf73; /* Deeper sage green for section titles */
+    margin-top: 20px;
+    font-size: 1.8em;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #8fbf73;
+}
+
+.BasicSpells p {
+    line-height: 1.6;
+    font-size: 1.2em;
+    color: #4a4a4a; /* Keep the original color for paragraphs */
+    margin: 15px 0;
+}
+
+.BasicSpells .spell-card {
+    background-color: #d4e6a5; /* Soft mint green for spell cards */
+    border: 2px solid #8fbf73;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.BasicSpells .spell-card h2 {
+    color: #527a4d; /* Darker green for spell titles */
+    font-size: 1.6em;
+    margin-bottom: 10px;
+}
+
+.BasicSpells .spell-card p {
+    font-size: 1.1em;
+    color: #4a4a4a; /* Keep the original soft dark grey for spell text */
+}
+
+/* Text Field Styles */
+.text-field {
+    margin-top: 25px;
+}
+
+.text-field label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1.2em;
+    color: #8fbf73;
+}
+
+.text-field textarea {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #8fbf73;
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+}
+
+.text-field button {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 10px 20px;
+    background-color: #8fbf73; /* Deeper sage green for buttons */
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+    font-family: 'Poppins', sans-serif;
+}
+
+.text-field button:hover {
+    background-color: #7ea964; /* Slightly darker sage green on hover */
+}
+
+/* Fundamentals Components Styles */
+.FundamentalsComponents {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #e3f2fd; /* Very light blue background */
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif; /* Playful font for all text */
+    color: #37474f; /* Darker blue-grey for text */
+}
+
+.FundamentalsComponents h1 {
+    text-align: center;
+    color: #1976d2; /* Darker blue for the main title */
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+.FundamentalsComponents h2 {
+    color: #1976d2; /* Darker blue for section titles */
+    margin-top: 20px;
+    font-size: 1.8em;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #bbdefb; /* Light blue background for tabs */
+    border-radius: 8px;
+    border: 2px solid #1976d2;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.FundamentalsComponents h2:hover {
+    background-color: #1976d2; /* Darker blue on hover */
+    color: #ffffff; /* White text on hover */
+}
+
+.FundamentalsComponents p {
+    line-height: 1.6;
+    font-size: 1.2em;
+    color: #37474f; /* Darker blue-grey for paragraphs */
+    margin: 15px 0;
+}
+
+.FundamentalsComponents .dropdown-content {
+    display: none;
+    padding: 10px;
+    background-color: #bbdefb; /* Light blue for dropdown background */
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.FundamentalsComponents .dropdown-content.show {
+    display: block;
+}
+
+/* Psychic Abilities Styles */
+.PsychicAbilities {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #dcd6f7; /* Soft lavender background */
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif; /* Playful font for all text */
+    color: #4a4a4a; /* Soft dark grey for text */
+}
+
+.PsychicAbilities h1 {
+    text-align: center;
+    color: #8e44ad; /* Rich lavender for the main title */
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+.PsychicAbilities h2 {
+    color: #8e44ad; /* Rich lavender for section titles */
+    margin-top: 20px;
+    font-size: 1.8em;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #8e44ad;
+}
+
+.PsychicAbilities p {
+    line-height: 1.6;
+    font-size: 1.2em;
+    color: #4a4a4a;
+    margin: 15px 0;
+}
+
+.PsychicAbilities .spell-card {
+    background-color: #f3e5f5; /* Slightly lighter lavender background for cards */
+    border: 2px solid #8e44ad;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.PsychicAbilities .spell-card h2 {
+    color: #8e44ad;
+    font-size: 1.6em;
+    margin-bottom: 10px;
+}
+
+/* Moon Phase Styles */
+.moon-phase {
+    text-align: center;
+    margin: 20px;
+}
+
+.moon-phase h2 {
+    color: #37474f; /* Darker blue-grey for text */
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.moon-phase img {
+    width: 150px;
+    height: auto;
+    margin-top: 15px;
+}
