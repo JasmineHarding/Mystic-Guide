@@ -19,7 +19,7 @@ function BasicSpells() {
             <div className="spell-card">
                 <h2>Banishing Spell</h2>
                 <a href="https://magickalspot.com/banishing-spells/" target="_blank" rel="noopener noreferrer">
-                    <img src="/images/banishing-spells.jpg" alt="Banishing Spell" />
+                    <img src={`${process.env.PUBLIC_URL}/images/banishing-spells.jpg`} alt="Banishing Spell" />
                 </a>
                 <p><strong>Explanation:</strong> To ward off negative influences or energies.</p>
                 <p><strong>Ingredients:</strong> Black candle, salt, garlic, paper, and pen, banishing oil (optional).</p>
@@ -29,7 +29,7 @@ function BasicSpells() {
             <div className="spell-card">
                 <h2>Money Spell</h2>
                 <a href="https://magickalspot.com/wiccan-money-spells/?gad_source=1&gclid=CjwKCAjw8fu1BhBsEiwAwDrsjOJnNceiOdpDfaErtSt1EZCnAKyvyuTe5pJFuuUmJNi44lTKMTZgxhoCPKkQAvD_BwE" target="_blank" rel="noopener noreferrer">
-                    <img src="/images/money-spells.jpg" alt="Money Spell" />
+                    <img src={`${process.env.PUBLIC_URL}/images/money-spells.jpg`} alt="Money Spell" />
                 </a>
                 <p><strong>Explanation:</strong> To attract financial prosperity and abundance.</p>
                 <p><strong>Ingredients:</strong> Green candle, cinnamon, coins, bay leaves, green pouch.</p>
@@ -39,7 +39,7 @@ function BasicSpells() {
             <div className="spell-card">
                 <h2>Protection Spell</h2>
                 <a href="https://magickalspot.com/protection-spells-guide/" target="_blank" rel="noopener noreferrer">
-                    <img src="/images/protection-spells.jpg" alt="Protection Spell" />
+                    <img src={`${process.env.PUBLIC_URL}/images/protection-spells.jpg`} alt="Protection Spell" />
                 </a>
                 <p><strong>Explanation:</strong> For safeguarding oneself or spaces from harm.</p>
                 <p><strong>Ingredients:</strong> White candle, protective herbs (e.g., rosemary, sage), black tourmaline or obsidian, salt.</p>
@@ -49,7 +49,7 @@ function BasicSpells() {
             <div className="spell-card">
                 <h2>Honey Jar Spell</h2>
                 <a href="https://magickalspot.com/honey-jar-spells/" target="_blank" rel="noopener noreferrer">
-                    <img src="/images/honey-jar-spells.jpg" alt="Honey Jar Spell" />
+                    <img src={`${process.env.PUBLIC_URL}/images/honey-jar-spells.jpg`} alt="Honey Jar Spell" />
                 </a>
                 <p><strong>Explanation:</strong> A spell focusing on sweetening relationships or situations.</p>
                 <p><strong>Ingredients:</strong> Honey, small jar, pink candle, rose petals, paper, and pen.</p>
@@ -58,8 +58,10 @@ function BasicSpells() {
 
             {/* Text field for taking notes */}
             <div className="text-field">
-                <label>Your Notes</label>
+                <label htmlFor="notesInput">Your Notes</label>
                 <textarea
+                    id="notesInput"
+                    name="notes"
                     value={note}
                     onChange={handleChange}
                     placeholder="Write your notes here..."

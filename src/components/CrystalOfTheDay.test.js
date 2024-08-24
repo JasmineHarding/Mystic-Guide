@@ -7,7 +7,7 @@ jest.mock('../components/Crystals', () => [
     name: 'Amethyst',
     image: '/images/amethyst.jpg',
     description: 'A powerful and protective stone.',
-  },
+  },<img src={`${process.env.PUBLIC_URL}/images/some-image.jpg`} alt="Description" />
 ]);
 
 test('CrystalOfTheDay integrates with CrystalChart', () => {

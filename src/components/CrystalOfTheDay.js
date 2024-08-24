@@ -54,7 +54,7 @@ const CrystalOfTheDay = () => {
     return (
         <div className="crystal-of-the-day">
             <h2>Crystal of the Day</h2>
-            <img src={crystal.image} alt={crystal.name} />
+            <img src={`${process.env.PUBLIC_URL}${crystal.image}`} alt={crystal.name} />
             <h3>{crystal.name}</h3>
             <p>{crystal.description}</p>
             
