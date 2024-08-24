@@ -8,7 +8,7 @@ import './styles/GlobalStyles.css';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/mystic-guide"> {/* Add the basename here */}
       <div className="App">
         <Routes>
           <Route path="/" element={<Home />} />
