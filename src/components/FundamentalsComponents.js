@@ -33,14 +33,25 @@ function FundamentalsComponents() {
             <div>
                 <h2 onClick={() => toggleDropdown('candles')}>Candles</h2>
                 <div className={`dropdown-content ${dropdown.candles ? 'show' : ''}`}>
-                    {/* Candle content */}
+                    <p><strong>White:</strong> Purity, protection, and peace. Used for cleansing and healing.</p>
+                    <p><strong>Red:</strong> Passion, love, and strength. Commonly used in rituals involving courage and vitality.</p>
+                    <p><strong>Black:</strong> Banishing negativity, protection, and grounding. Helps in absorbing negativity and breaking hexes.</p>
+                    <p><strong>Green:</strong> Prosperity, fertility, and abundance. Often used in money-drawing spells and growth rituals.</p>
+                    <p><strong>Yellow:</strong> Communication, creativity, and confidence. Ideal for boosting intellect and focus.</p>
+                    <p><strong>Blue:</strong> Calm, wisdom, and healing. Associated with emotional healing and peace.</p>
+                    <p><strong>Purple:</strong> Spirituality, intuition, and power. Used for meditation and enhancing psychic abilities.</p>
                 </div>
             </div>
 
             <div>
                 <h2 onClick={() => toggleDropdown('herbs')}>Herbs</h2>
                 <div className={`dropdown-content ${dropdown.herbs ? 'show' : ''}`}>
-                    {/* Herbs content */}
+                    <p><strong>Sage:</strong> Used for cleansing spaces, removing negative energy, and protection.</p>
+                    <p><strong>Lavender:</strong> Promotes relaxation, peace, and restful sleep. Often used in love spells and healing rituals.</p>
+                    <p><strong>Rosemary:</strong> Enhances memory, provides protection, and is used in purification rituals.</p>
+                    <p><strong>Basil:</strong> Attracts wealth, love, and good luck. Often used in money and prosperity spells.</p>
+                    <p><strong>Chamomile:</strong> Calms the mind, aids in sleep, and brings in luck and prosperity. Commonly used in relaxation and meditation practices.</p>
+                    <p><strong>Peppermint:</strong> Boosts energy, provides clarity, and enhances psychic abilities. Also used for healing and purification.</p>
                 </div>
             </div>
 
@@ -56,12 +67,10 @@ function FundamentalsComponents() {
                     <p>Last Quarter: Represents releasing, surrendering, and emotional healing. It's a time for clarity and purpose.</p>
                     <p>Waning Crescent: The final phase for rest, reflection, and preparation for the new cycle, reflecting on achievements and planning ahead.</p>
 
-                    {/* Add the MoonPhase component here */}
                     <MoonPhase />
                 </div>
             </div>
 
-            {/* Text field for taking notes */}
             <div className="text-field">
                 <label>Your Notes</label>
                 <textarea

@@ -79,7 +79,6 @@ const MoonPhase = () => {
     return (
         <div className="moon-phase">
             <h2>Current Moon Phase: {phase}</h2>
-            <img src={imageSource()} alt={phase} />
         </div>
     );
 };
